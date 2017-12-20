@@ -1,0 +1,96 @@
+[2017-12-19 12:00:01,055][INFO ][node                     ] [Shiva] version[2.4.6], pid[12728], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-19 12:00:01,056][INFO ][node                     ] [Shiva] initializing ...
+[2017-12-19 12:00:01,970][ERROR][bootstrap                ] Exception
+java.lang.IllegalStateException: Could not load plugin descriptor for existing plugin [ik]. Was the plugin built before 2.0?
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:380)
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:128)
+	at org.elasticsearch.node.Node.<init>(Node.java:158)
+	at org.elasticsearch.node.Node.<init>(Node.java:140)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:143)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:194)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:286)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:45)
+Caused by: java.nio.file.NoSuchFileException: D:\elasticsearch-2.4.6\plugins\ik\plugin-descriptor.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:87)
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:378)
+	... 7 more
+[2017-12-19 12:00:29,453][INFO ][node                     ] [Bedlam] version[2.4.6], pid[9516], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-19 12:00:29,453][INFO ][node                     ] [Bedlam] initializing ...
+[2017-12-19 12:00:29,811][ERROR][bootstrap                ] Exception
+java.lang.IllegalStateException: Could not load plugin descriptor for existing plugin [ik]. Was the plugin built before 2.0?
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:380)
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:128)
+	at org.elasticsearch.node.Node.<init>(Node.java:158)
+	at org.elasticsearch.node.Node.<init>(Node.java:140)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:143)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:194)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:286)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:45)
+Caused by: java.nio.file.NoSuchFileException: D:\elasticsearch-2.4.6\plugins\ik\plugin-descriptor.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:87)
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:378)
+	... 7 more
+[2017-12-19 12:00:46,961][INFO ][node                     ] [Morris Bench] version[2.4.6], pid[1756], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-19 12:00:46,961][INFO ][node                     ] [Morris Bench] initializing ...
+[2017-12-19 12:00:47,331][ERROR][bootstrap                ] Exception
+java.lang.IllegalStateException: Could not load plugin descriptor for existing plugin [ik]. Was the plugin built before 2.0?
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:380)
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:128)
+	at org.elasticsearch.node.Node.<init>(Node.java:158)
+	at org.elasticsearch.node.Node.<init>(Node.java:140)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:143)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:194)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:286)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:45)
+Caused by: java.nio.file.NoSuchFileException: D:\elasticsearch-2.4.6\plugins\ik\plugin-descriptor.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:87)
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:378)
+	... 7 more
+[2017-12-19 12:00:52,307][INFO ][node                     ] [Smart Alec] version[2.4.6], pid[6964], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-19 12:00:52,308][INFO ][node                     ] [Smart Alec] initializing ...
+[2017-12-19 12:00:52,668][ERROR][bootstrap                ] Exception
+java.lang.IllegalStateException: Could not load plugin descriptor for existing plugin [ik]. Was the plugin built before 2.0?
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:380)
+	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:128)
+	at org.elasticsearch.node.Node.<init>(Node.java:158)
+	at org.elasticsearch.node.Node.<init>(Node.java:140)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:143)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:194)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:286)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:45)
+Caused by: java.nio.file.NoSuchFileException: D:\elasticsearch-2.4.6\plugins\ik\plugin-descriptor.properties
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.Files.newByteChannel(Files.java:407)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
+	at java.nio.file.Files.newInputStream(Files.java:152)
+	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:87)
+	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:378)
+	... 7 more
