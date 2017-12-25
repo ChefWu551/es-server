@@ -1,182 +1,66 @@
-[2017-12-20 11:23:13,261][INFO ][node                     ] [Sack] version[2.4.6], pid[7636], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 11:23:13,270][INFO ][node                     ] [Sack] initializing ...
-[2017-12-20 11:23:14,206][ERROR][bootstrap                ] Exception
-java.lang.IllegalStateException: Could not load plugin descriptor for existing plugin [ik]. Was the plugin built before 2.0?
-	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:380)
-	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:128)
-	at org.elasticsearch.node.Node.<init>(Node.java:158)
-	at org.elasticsearch.node.Node.<init>(Node.java:140)
-	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:143)
-	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:194)
-	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:286)
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:45)
-Caused by: java.nio.file.NoSuchFileException: D:\elasticsearch-2.4.6\plugins\ik\plugin-descriptor.properties
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
-	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
-	at java.nio.file.Files.newByteChannel(Files.java:361)
-	at java.nio.file.Files.newByteChannel(Files.java:407)
-	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
-	at java.nio.file.Files.newInputStream(Files.java:152)
-	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:87)
-	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:378)
-	... 7 more
-[2017-12-20 11:28:54,146][INFO ][node                     ] [Reignfire] version[2.4.6], pid[17452], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 11:28:54,147][INFO ][node                     ] [Reignfire] initializing ...
-[2017-12-20 11:28:54,593][ERROR][bootstrap                ] Exception
-java.lang.IllegalStateException: Could not load plugin descriptor for existing plugin [ik]. Was the plugin built before 2.0?
-	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:380)
-	at org.elasticsearch.plugins.PluginsService.<init>(PluginsService.java:128)
-	at org.elasticsearch.node.Node.<init>(Node.java:158)
-	at org.elasticsearch.node.Node.<init>(Node.java:140)
-	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:143)
-	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:194)
-	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:286)
-	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:45)
-Caused by: java.nio.file.NoSuchFileException: D:\elasticsearch-2.4.6\plugins\ik\plugin-descriptor.properties
-	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
-	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
-	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230)
-	at java.nio.file.Files.newByteChannel(Files.java:361)
-	at java.nio.file.Files.newByteChannel(Files.java:407)
-	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:384)
-	at java.nio.file.Files.newInputStream(Files.java:152)
-	at org.elasticsearch.plugins.PluginInfo.readFromProperties(PluginInfo.java:87)
-	at org.elasticsearch.plugins.PluginsService.getPluginBundles(PluginsService.java:378)
-	... 7 more
-[2017-12-20 11:29:35,678][INFO ][node                     ] [Brother Tode] version[2.4.6], pid[16904], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 11:29:35,679][INFO ][node                     ] [Brother Tode] initializing ...
-[2017-12-20 11:29:36,208][INFO ][plugins                  ] [Brother Tode] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
-[2017-12-20 11:29:36,512][INFO ][env                      ] [Brother Tode] using [1] data paths, mounts [[project (D:)]], net usable_space [346.7gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 11:29:36,513][INFO ][env                      ] [Brother Tode] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 11:29:41,226][INFO ][node                     ] [Brother Tode] initialized
-[2017-12-20 11:29:41,227][INFO ][node                     ] [Brother Tode] starting ...
-[2017-12-20 11:29:42,122][INFO ][transport                ] [Brother Tode] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
-[2017-12-20 11:29:42,129][INFO ][discovery                ] [Brother Tode] elasticsearch/qdvIuRQiQQakAwp_cwqWfw
-[2017-12-20 11:29:46,281][INFO ][cluster.service          ] [Brother Tode] new_master {Brother Tode}{qdvIuRQiQQakAwp_cwqWfw}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 11:29:46,393][INFO ][gateway                  ] [Brother Tode] recovered [0] indices into cluster_state
-[2017-12-20 11:29:46,973][INFO ][http                     ] [Brother Tode] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
-[2017-12-20 11:29:46,974][INFO ][node                     ] [Brother Tode] started
-[2017-12-20 11:29:49,188][INFO ][node                     ] [Brother Tode] stopping ...
-[2017-12-20 11:29:49,219][INFO ][node                     ] [Brother Tode] stopped
-[2017-12-20 11:29:49,281][INFO ][node                     ] [Brother Tode] closing ...
-[2017-12-20 11:29:49,289][INFO ][node                     ] [Brother Tode] closed
-[2017-12-20 15:25:20,167][INFO ][node                     ] [Gorgeous George] version[2.4.6], pid[17596], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 15:25:20,169][INFO ][node                     ] [Gorgeous George] initializing ...
-[2017-12-20 15:25:21,064][INFO ][plugins                  ] [Gorgeous George] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
-[2017-12-20 15:25:21,170][INFO ][env                      ] [Gorgeous George] using [1] data paths, mounts [[project (D:)]], net usable_space [346.6gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 15:25:21,170][INFO ][env                      ] [Gorgeous George] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 15:25:25,218][INFO ][node                     ] [Gorgeous George] initialized
-[2017-12-20 15:25:25,219][INFO ][node                     ] [Gorgeous George] starting ...
-[2017-12-20 15:25:25,957][INFO ][transport                ] [Gorgeous George] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
-[2017-12-20 15:25:25,961][INFO ][discovery                ] [Gorgeous George] elasticsearch/DA7njGWTTMK5wI_QBy-NHA
-[2017-12-20 15:25:30,113][INFO ][cluster.service          ] [Gorgeous George] new_master {Gorgeous George}{DA7njGWTTMK5wI_QBy-NHA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 15:25:30,205][INFO ][gateway                  ] [Gorgeous George] recovered [0] indices into cluster_state
-[2017-12-20 15:25:30,809][INFO ][http                     ] [Gorgeous George] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
-[2017-12-20 15:25:30,809][INFO ][node                     ] [Gorgeous George] started
-[2017-12-20 15:26:09,720][INFO ][node                     ] [Gorgeous George] stopping ...
-[2017-12-20 15:26:09,774][INFO ][node                     ] [Gorgeous George] stopped
-[2017-12-20 15:26:09,774][INFO ][node                     ] [Gorgeous George] closing ...
-[2017-12-20 15:26:09,778][INFO ][node                     ] [Gorgeous George] closed
-[2017-12-20 16:45:43,367][INFO ][node                     ] [Robert Hunter] version[2.4.6], pid[16216], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 16:45:43,368][INFO ][node                     ] [Robert Hunter] initializing ...
-[2017-12-20 16:45:43,856][INFO ][plugins                  ] [Robert Hunter] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
-[2017-12-20 16:45:43,940][INFO ][env                      ] [Robert Hunter] using [1] data paths, mounts [[project (D:)]], net usable_space [346.6gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 16:45:43,940][INFO ][env                      ] [Robert Hunter] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 16:45:48,158][INFO ][node                     ] [Robert Hunter] initialized
-[2017-12-20 16:45:48,159][INFO ][node                     ] [Robert Hunter] starting ...
-[2017-12-20 16:45:48,944][INFO ][transport                ] [Robert Hunter] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
-[2017-12-20 16:45:48,949][INFO ][discovery                ] [Robert Hunter] elasticsearch/r-owtENIQkamj36pnugdkQ
-[2017-12-20 16:45:53,114][INFO ][cluster.service          ] [Robert Hunter] new_master {Robert Hunter}{r-owtENIQkamj36pnugdkQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 16:45:53,219][INFO ][gateway                  ] [Robert Hunter] recovered [0] indices into cluster_state
-[2017-12-20 16:45:54,114][INFO ][http                     ] [Robert Hunter] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9201}
-[2017-12-20 16:45:54,114][INFO ][node                     ] [Robert Hunter] started
-[2017-12-20 16:46:42,648][INFO ][node                     ] [Robert Hunter] stopping ...
-[2017-12-20 16:46:42,676][INFO ][node                     ] [Robert Hunter] stopped
-[2017-12-20 16:46:42,676][INFO ][node                     ] [Robert Hunter] closing ...
-[2017-12-20 16:46:42,680][INFO ][node                     ] [Robert Hunter] closed
-[2017-12-20 17:02:40,754][INFO ][node                     ] [Shaman] version[2.4.6], pid[13848], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 17:02:40,755][INFO ][node                     ] [Shaman] initializing ...
-[2017-12-20 17:02:41,308][INFO ][plugins                  ] [Shaman] modules [reindex, lang-expression, lang-groovy], plugins [], sites []
-[2017-12-20 17:02:41,383][INFO ][env                      ] [Shaman] using [1] data paths, mounts [[project (D:)]], net usable_space [346.6gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 17:02:41,384][INFO ][env                      ] [Shaman] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 17:02:43,804][INFO ][node                     ] [Shaman] initialized
-[2017-12-20 17:02:43,804][INFO ][node                     ] [Shaman] starting ...
-[2017-12-20 17:02:44,271][INFO ][transport                ] [Shaman] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
-[2017-12-20 17:02:44,278][INFO ][discovery                ] [Shaman] elasticsearch/4bwkLhDISxCDNcn_EhpcLA
-[2017-12-20 17:02:48,325][INFO ][cluster.service          ] [Shaman] new_master {Shaman}{4bwkLhDISxCDNcn_EhpcLA}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 17:02:48,497][INFO ][gateway                  ] [Shaman] recovered [0] indices into cluster_state
-[2017-12-20 17:02:48,742][INFO ][http                     ] [Shaman] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
-[2017-12-20 17:02:48,742][INFO ][node                     ] [Shaman] started
-[2017-12-20 17:10:34,163][INFO ][node                     ] [Shaman] stopping ...
-[2017-12-20 17:10:34,191][INFO ][node                     ] [Shaman] stopped
-[2017-12-20 17:10:34,191][INFO ][node                     ] [Shaman] closing ...
-[2017-12-20 17:10:34,198][INFO ][node                     ] [Shaman] closed
-[2017-12-20 17:30:44,293][INFO ][node                     ] [Sleeper] version[2.4.6], pid[21340], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 17:30:44,294][INFO ][node                     ] [Sleeper] initializing ...
-[2017-12-20 17:30:45,107][INFO ][plugins                  ] [Sleeper] modules [reindex, lang-expression, lang-groovy], plugins [analysis-ik], sites []
-[2017-12-20 17:30:45,235][INFO ][env                      ] [Sleeper] using [1] data paths, mounts [[project (D:)]], net usable_space [346.6gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 17:30:45,235][INFO ][env                      ] [Sleeper] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 17:30:47,684][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server\elasticsearch\config\analysis-ik\IKAnalyzer.cfg.xml
-[2017-12-20 17:30:47,686][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server\elasticsearch\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
-[2017-12-20 17:30:47,956][INFO ][ik-analyzer              ] [Dict Loading] custom\mydict.dic
-[2017-12-20 17:30:47,959][INFO ][ik-analyzer              ] [Dict Loading] custom\single_word_low_freq.dic
-[2017-12-20 17:30:48,001][INFO ][ik-analyzer              ] [Dict Loading] custom\ext_stopword.dic
-[2017-12-20 17:30:49,626][INFO ][node                     ] [Sleeper] initialized
-[2017-12-20 17:30:49,627][INFO ][node                     ] [Sleeper] starting ...
-[2017-12-20 17:30:50,087][INFO ][transport                ] [Sleeper] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
-[2017-12-20 17:30:50,094][INFO ][discovery                ] [Sleeper] elasticsearch/5wNiI8wdSiGC_3bd1oweYA
-[2017-12-20 17:30:54,257][INFO ][cluster.service          ] [Sleeper] new_master {Sleeper}{5wNiI8wdSiGC_3bd1oweYA}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 17:30:54,351][INFO ][gateway                  ] [Sleeper] recovered [0] indices into cluster_state
-[2017-12-20 17:30:54,695][INFO ][http                     ] [Sleeper] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
-[2017-12-20 17:30:54,696][INFO ][node                     ] [Sleeper] started
-[2017-12-20 17:31:13,235][INFO ][node                     ] [Sleeper] stopping ...
-[2017-12-20 17:31:13,258][INFO ][node                     ] [Sleeper] stopped
-[2017-12-20 17:31:13,258][INFO ][node                     ] [Sleeper] closing ...
-[2017-12-20 17:31:13,261][INFO ][node                     ] [Sleeper] closed
-[2017-12-20 17:39:02,176][INFO ][node                     ] [Desmond Pitt] version[2.4.6], pid[12972], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 17:39:02,176][INFO ][node                     ] [Desmond Pitt] initializing ...
-[2017-12-20 17:39:02,769][INFO ][plugins                  ] [Desmond Pitt] modules [reindex, lang-expression, lang-groovy], plugins [head, analysis-ik], sites [head]
-[2017-12-20 17:39:02,837][INFO ][env                      ] [Desmond Pitt] using [1] data paths, mounts [[project (D:)]], net usable_space [346.6gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 17:39:02,837][INFO ][env                      ] [Desmond Pitt] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 17:39:04,287][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server\elasticsearch\config\analysis-ik\IKAnalyzer.cfg.xml
-[2017-12-20 17:39:04,291][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server\elasticsearch\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
-[2017-12-20 17:39:04,689][INFO ][ik-analyzer              ] [Dict Loading] custom\mydict.dic
-[2017-12-20 17:39:04,693][INFO ][ik-analyzer              ] [Dict Loading] custom\single_word_low_freq.dic
-[2017-12-20 17:39:04,700][INFO ][ik-analyzer              ] [Dict Loading] custom\ext_stopword.dic
-[2017-12-20 17:39:06,050][INFO ][node                     ] [Desmond Pitt] initialized
-[2017-12-20 17:39:06,050][INFO ][node                     ] [Desmond Pitt] starting ...
-[2017-12-20 17:39:06,547][INFO ][transport                ] [Desmond Pitt] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
-[2017-12-20 17:39:06,553][INFO ][discovery                ] [Desmond Pitt] elasticsearch/S-Ex2ckrSrySgC6iGn5NDw
-[2017-12-20 17:39:10,596][INFO ][cluster.service          ] [Desmond Pitt] new_master {Desmond Pitt}{S-Ex2ckrSrySgC6iGn5NDw}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 17:39:10,776][INFO ][gateway                  ] [Desmond Pitt] recovered [0] indices into cluster_state
-[2017-12-20 17:39:11,014][INFO ][http                     ] [Desmond Pitt] publish_address {10.0.75.1:9201}, bound_addresses {[::]:9201}
-[2017-12-20 17:39:11,014][INFO ][node                     ] [Desmond Pitt] started
-[2017-12-20 17:39:43,413][INFO ][node                     ] [Desmond Pitt] stopping ...
-[2017-12-20 17:39:43,440][INFO ][node                     ] [Desmond Pitt] stopped
-[2017-12-20 17:39:43,440][INFO ][node                     ] [Desmond Pitt] closing ...
-[2017-12-20 17:39:43,444][INFO ][node                     ] [Desmond Pitt] closed
-[2017-12-20 17:39:47,393][INFO ][node                     ] [Miek] version[2.4.6], pid[20156], build[5376dca/2017-07-18T12:17:44Z]
-[2017-12-20 17:39:47,394][INFO ][node                     ] [Miek] initializing ...
-[2017-12-20 17:39:48,021][INFO ][plugins                  ] [Miek] modules [reindex, lang-expression, lang-groovy], plugins [head, analysis-ik], sites [head]
-[2017-12-20 17:39:48,095][INFO ][env                      ] [Miek] using [1] data paths, mounts [[project (D:)]], net usable_space [346.6gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
-[2017-12-20 17:39:48,096][INFO ][env                      ] [Miek] heap size [989.8mb], compressed ordinary object pointers [true]
-[2017-12-20 17:39:49,442][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server\elasticsearch\config\analysis-ik\IKAnalyzer.cfg.xml
-[2017-12-20 17:39:49,445][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server\elasticsearch\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
-[2017-12-20 17:39:49,862][INFO ][ik-analyzer              ] [Dict Loading] custom\mydict.dic
-[2017-12-20 17:39:49,865][INFO ][ik-analyzer              ] [Dict Loading] custom\single_word_low_freq.dic
-[2017-12-20 17:39:49,875][INFO ][ik-analyzer              ] [Dict Loading] custom\ext_stopword.dic
-[2017-12-20 17:39:51,189][INFO ][node                     ] [Miek] initialized
-[2017-12-20 17:39:51,190][INFO ][node                     ] [Miek] starting ...
-[2017-12-20 17:39:51,765][INFO ][transport                ] [Miek] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
-[2017-12-20 17:39:51,771][INFO ][discovery                ] [Miek] elasticsearch/KdK_zvGIRhelNJw3oPn3GA
-[2017-12-20 17:39:55,811][INFO ][cluster.service          ] [Miek] new_master {Miek}{KdK_zvGIRhelNJw3oPn3GA}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
-[2017-12-20 17:39:55,988][INFO ][gateway                  ] [Miek] recovered [0] indices into cluster_state
-[2017-12-20 17:39:56,254][INFO ][http                     ] [Miek] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
-[2017-12-20 17:39:56,255][INFO ][node                     ] [Miek] started
-[2017-12-20 17:40:22,439][INFO ][node                     ] [Miek] stopping ...
-[2017-12-20 17:40:22,468][INFO ][node                     ] [Miek] stopped
-[2017-12-20 17:40:22,469][INFO ][node                     ] [Miek] closing ...
-[2017-12-20 17:40:22,478][INFO ][node                     ] [Miek] closed
+[2017-12-21 09:57:53,848][INFO ][node                     ] [Grey King] version[2.4.6], pid[9420], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-21 09:57:53,854][INFO ][node                     ] [Grey King] initializing ...
+[2017-12-21 09:57:54,940][INFO ][plugins                  ] [Grey King] modules [reindex, lang-expression, lang-groovy], plugins [head, analysis-ik], sites [head]
+[2017-12-21 09:57:55,023][INFO ][env                      ] [Grey King] using [1] data paths, mounts [[project (D:)]], net usable_space [346.4gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
+[2017-12-21 09:57:55,023][INFO ][env                      ] [Grey King] heap size [989.8mb], compressed ordinary object pointers [true]
+[2017-12-21 09:57:57,480][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server-temp\es-server\elasticsearch\config\analysis-ik\IKAnalyzer.cfg.xml
+[2017-12-21 09:57:57,484][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server-temp\es-server\elasticsearch\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
+[2017-12-21 09:57:57,845][INFO ][ik-analyzer              ] [Dict Loading] custom\mydict.dic
+[2017-12-21 09:57:57,847][INFO ][ik-analyzer              ] [Dict Loading] custom\single_word_low_freq.dic
+[2017-12-21 09:57:57,887][INFO ][ik-analyzer              ] [Dict Loading] custom\ext_stopword.dic
+[2017-12-21 09:58:00,127][INFO ][node                     ] [Grey King] initialized
+[2017-12-21 09:58:00,128][INFO ][node                     ] [Grey King] starting ...
+[2017-12-21 09:58:00,620][INFO ][transport                ] [Grey King] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
+[2017-12-21 09:58:00,627][INFO ][discovery                ] [Grey King] elasticsearch/BH7WFM4sQZeK4L1TRghT4w
+[2017-12-21 09:58:04,693][INFO ][cluster.service          ] [Grey King] new_master {Grey King}{BH7WFM4sQZeK4L1TRghT4w}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-12-21 09:58:04,813][INFO ][gateway                  ] [Grey King] recovered [0] indices into cluster_state
+[2017-12-21 09:58:05,116][INFO ][http                     ] [Grey King] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
+[2017-12-21 09:58:05,117][INFO ][node                     ] [Grey King] started
+[2017-12-21 10:09:05,227][INFO ][node                     ] [Grey King] stopping ...
+[2017-12-21 10:09:05,359][INFO ][node                     ] [Grey King] stopped
+[2017-12-21 10:09:05,360][INFO ][node                     ] [Grey King] closing ...
+[2017-12-21 10:09:05,365][INFO ][node                     ] [Grey King] closed
+[2017-12-21 10:09:09,650][INFO ][node                     ] [Flygirl] version[2.4.6], pid[2588], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-21 10:09:09,651][INFO ][node                     ] [Flygirl] initializing ...
+[2017-12-21 10:09:10,294][INFO ][plugins                  ] [Flygirl] modules [reindex, lang-expression, lang-groovy], plugins [head, analysis-ik], sites [head]
+[2017-12-21 10:09:10,386][INFO ][env                      ] [Flygirl] using [1] data paths, mounts [[project (D:)]], net usable_space [346.4gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
+[2017-12-21 10:09:10,386][INFO ][env                      ] [Flygirl] heap size [989.8mb], compressed ordinary object pointers [true]
+[2017-12-21 10:09:11,891][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server-temp\es-server\elasticsearch\config\analysis-ik\IKAnalyzer.cfg.xml
+[2017-12-21 10:09:11,894][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server-temp\es-server\elasticsearch\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
+[2017-12-21 10:09:12,211][INFO ][ik-analyzer              ] [Dict Loading] custom\mydict.dic
+[2017-12-21 10:09:12,216][INFO ][ik-analyzer              ] [Dict Loading] custom\single_word_low_freq.dic
+[2017-12-21 10:09:12,224][INFO ][ik-analyzer              ] [Dict Loading] custom\ext_stopword.dic
+[2017-12-21 10:09:13,741][INFO ][node                     ] [Flygirl] initialized
+[2017-12-21 10:09:13,741][INFO ][node                     ] [Flygirl] starting ...
+[2017-12-21 10:09:14,185][INFO ][transport                ] [Flygirl] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
+[2017-12-21 10:09:14,191][INFO ][discovery                ] [Flygirl] elasticsearch/UniQSWs3SMe6d_TOFm76bQ
+[2017-12-21 10:09:18,236][INFO ][cluster.service          ] [Flygirl] new_master {Flygirl}{UniQSWs3SMe6d_TOFm76bQ}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-12-21 10:09:18,333][INFO ][gateway                  ] [Flygirl] recovered [0] indices into cluster_state
+[2017-12-21 10:09:18,601][INFO ][http                     ] [Flygirl] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
+[2017-12-21 10:09:18,601][INFO ][node                     ] [Flygirl] started
+[2017-12-21 10:11:48,468][INFO ][node                     ] [Flygirl] stopping ...
+[2017-12-21 10:11:48,507][INFO ][node                     ] [Flygirl] stopped
+[2017-12-21 10:11:48,507][INFO ][node                     ] [Flygirl] closing ...
+[2017-12-21 10:11:48,511][INFO ][node                     ] [Flygirl] closed
+[2017-12-21 10:11:52,031][INFO ][node                     ] [Cain] version[2.4.6], pid[17672], build[5376dca/2017-07-18T12:17:44Z]
+[2017-12-21 10:11:52,032][INFO ][node                     ] [Cain] initializing ...
+[2017-12-21 10:11:52,570][INFO ][plugins                  ] [Cain] modules [reindex, lang-expression, lang-groovy], plugins [head, analysis-ik], sites [head]
+[2017-12-21 10:11:52,632][INFO ][env                      ] [Cain] using [1] data paths, mounts [[project (D:)]], net usable_space [346.4gb], net total_space [415.2gb], spins? [unknown], types [NTFS]
+[2017-12-21 10:11:52,633][INFO ][env                      ] [Cain] heap size [989.8mb], compressed ordinary object pointers [true]
+[2017-12-21 10:11:53,831][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server-temp\es-server\elasticsearch\config\analysis-ik\IKAnalyzer.cfg.xml
+[2017-12-21 10:11:53,836][INFO ][ik-analyzer              ] try load config from D:\ThunderData\es-server-temp\es-server\elasticsearch\plugins\analysis-ik\config\IKAnalyzer.cfg.xml
+[2017-12-21 10:11:54,205][INFO ][ik-analyzer              ] [Dict Loading] custom\mydict.dic
+[2017-12-21 10:11:54,210][INFO ][ik-analyzer              ] [Dict Loading] custom\single_word_low_freq.dic
+[2017-12-21 10:11:54,218][INFO ][ik-analyzer              ] [Dict Loading] custom\ext_stopword.dic
+[2017-12-21 10:11:55,555][INFO ][node                     ] [Cain] initialized
+[2017-12-21 10:11:55,555][INFO ][node                     ] [Cain] starting ...
+[2017-12-21 10:11:56,013][INFO ][transport                ] [Cain] publish_address {10.0.75.1:9300}, bound_addresses {[::]:9300}
+[2017-12-21 10:11:56,018][INFO ][discovery                ] [Cain] elasticsearch/ax_4uQ5pRbWyAmf7mVzvvw
+[2017-12-21 10:12:00,069][INFO ][cluster.service          ] [Cain] new_master {Cain}{ax_4uQ5pRbWyAmf7mVzvvw}{10.0.75.1}{10.0.75.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2017-12-21 10:12:00,262][INFO ][gateway                  ] [Cain] recovered [0] indices into cluster_state
+[2017-12-21 10:12:00,431][INFO ][http                     ] [Cain] publish_address {10.0.75.1:9200}, bound_addresses {[::]:9200}
+[2017-12-21 10:12:00,432][INFO ][node                     ] [Cain] started
+[2017-12-21 10:22:10,116][INFO ][node                     ] [Cain] stopping ...
+[2017-12-21 10:22:10,290][INFO ][node                     ] [Cain] stopped
+[2017-12-21 10:22:10,290][INFO ][node                     ] [Cain] closing ...
+[2017-12-21 10:22:10,342][INFO ][node                     ] [Cain] closed
