@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: test-hostpath
+    role: master
+  name: test-hostpath
+spec:
+  containers:
+    - name: test-hostpath
+      image: registry:5000/back_demon:1.0
+      volumeMounts:
+       - name: ssl-certs
+         mountPath: /home/laizy/test/cert
+         readOnly: true
+      command:
+      - /run.sh
+  volumes:
+  - name: ssl-certs
+    hostPath:
+     path: /etc/ssl/certs

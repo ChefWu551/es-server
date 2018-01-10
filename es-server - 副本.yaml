@@ -18,10 +18,6 @@ spec:
           command: ["/bin/sh","-c", "usr/share/elasticsearch/bin/elasticsearch"]
           ports:
             - containerPort: 9200
-          volumeMounts:
-            - mountPath: usr/share/elasticsearch/data
-              name: elasticsearch
-              subPath: data/elasticsearch
       volumes:
         - name: code
           persistentVolumeClaim:
@@ -31,9 +27,7 @@ spec:
           hostPath:
             path: /etc/localtime
 
-        - name: elasticsearch
-          persistentVolumeClaim:
-            claimName: platform-hostdisk
+        
 
 ---
 apiVersion: v1
